@@ -237,6 +237,18 @@ h6,
   }
 }
 
+.navbar .btn-login {
+  background-color: none !important;
+  color: #36495a;
+  border: #6aace6 2px solid;
+  text-align: center;
+}
+
+.navbar .btn-login:hover {
+  background-color: #428bca;
+  color: #fff;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -816,6 +828,35 @@ section {
   left: 0;
 }
 
+.speech hr {
+  border: 0;
+  height: 2px;
+  width: 90%;
+  position: relative;
+  margin: 30px auto;
+}
+
+.speech hr.center-diamond {
+  background: #51c5f3;
+}
+.speech hr.center-diamond::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #39d1b4;
+  display: inline-block;
+  border: 2px solid #39d1b4;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin: 0 0 0 -3px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Opera, Chrome, and Safari */
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1097,8 +1138,8 @@ section {
   right: 20px;
   background: linear-gradient(
     360deg,
-    #5c768d 0%,
-    rgba(92, 118, 141, 0.9) 35%,
+    #107fe0 0%,
+    35%,
     rgba(140, 167, 191, 0.8) 100%
   );
   padding: 15px 0;
@@ -1146,6 +1187,12 @@ section {
   .team .member {
     margin-bottom: 100px;
   }
+}
+
+.team .swiper-team {
+  /* width: 100%;
+  height: 100%; */
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
