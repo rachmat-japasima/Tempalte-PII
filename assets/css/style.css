@@ -789,13 +789,25 @@ section {
 # Speech
 --------------------------------------------------------------*/
 .speech {
-  background-color: #74ebd5;
-  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .speech h1 {
   color: #428bca;
   margin-bottom: 20px;
+}
+.speech p {
+  color: rgb(28, 92, 147);
 }
 
 .speech .foto {
