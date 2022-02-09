@@ -890,6 +890,37 @@ section {
   font-size: 14px;
 }
 
+/* partner */
+.partner {
+  padding: 0;
+  height: fit-content;
+}
+
+.partner h4 {
+  font-size: 25px;
+  color: #5c768c;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.partner .logo-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.partner .logo {
+  /* background: none; */
+}
+
+.partner .logo img {
+  filter: grayscale(100%);
+  max-height: 100px !important;
+  width: fit-content;
+}
+/* END partner */
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -904,19 +935,19 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: fit-content;
   height: 80px;
   margin-bottom: 20px;
-  background: #fff;
-  border-radius: 50%;
+  background: transparent;
+  /* border-radius: 50%; */
   transition: 0.5s;
-  color: #428bca;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-.services .icon i {
-  font-size: 36px;
-  line-height: 0;
+.services .icon img {
+  filter: grayscale(100%);
+  /* font-size: 36px;
+  line-height: 0; */
 }
 .services .icon-box:hover .icon {
   box-shadow: 0px 0 30px rgba(66, 139, 202, 0.5);
