@@ -764,6 +764,10 @@ section {
 .about-lists {
   padding: 40px;
 }
+
+.about-lists .content-item img {
+  max-width: 100px;
+}
 .about-lists .row {
   overflow: hidden;
 }
@@ -773,9 +777,8 @@ section {
   border-bottom: 1px solid #d9e8f4;
   margin: -1px;
 }
-.about-lists .content-item span {
-  display: block;
-  font-size: 24px;
+.about-lists .content-item .marks {
+  font-size: 20px;
   font-weight: 400;
   color: #9eccf4;
 }
@@ -783,7 +786,7 @@ section {
   font-size: 28px;
   font-weight: 400;
   padding: 0;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .about-lists .content-item p {
   color: #aaaaaa;
@@ -1136,12 +1139,17 @@ section {
   bottom: -48px;
   left: 20px;
   right: 20px;
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    360deg,
-    #107fe0 0%,
-    35%,
-    rgba(140, 167, 191, 0.8) 100%
-  );
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 15px 0;
   border-radius: 4px;
 }
